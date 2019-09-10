@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title>个人博客首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!-- [if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function () {
+            $('#header').load('./include/header.html');
+            $('#aboutMe').load('./tpl/aboutMe.html');
+            $('#resume').load('./tpl/resume.html');
+            $('#skill').load('./tpl/skill.html');
+            $('#footer').load('./include/footer.html');
+        })
+
+    </script>
+</head>
+<style>
+    .carousel-inner  .item  img {
+        width: 100%;
+    }
+
+</style>
+<body>
+<div id="header"></div>
+<!--动态轮播图-->
+<div class="carousel slide " data-ride="carousel" data-interval="3000" id="slide">
+    <ol class="carousel-indicators">
+        <li data-target="#slide" data-slide-to="0" class="active"></li>
+        <li data-target="#slide" data-slide-to="1"></li>
+        <li data-target="#slide" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/s1.jpg" alt=""/>
+            <!--<div class="carousel-caption">
+                <h5>企业一卡通</h5>
+                <span>山东威尔数据股份有限公司专注企业一卡通</span>
+            </div>-->
+        </div>
+        <div class="item ">
+            <img src="img/s2.jpg" alt=""/>
+        </div>
+        <div class="item ">
+            <img src="img/s3.jpg" alt=""/>
+        </div>
+    </div>
+    <a href="#slide" data-slide="prev" class="carousel-control left">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#slide" data-slide="next" class="carousel-control right">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+</div>
+<!--关于我 个人图片及信息介绍-->
+<div id="main">
+    <div id="aboutMe">
+    </div>
+    <!--简历-->
+    <div id="resume" class="my-bg">
+    </div>
+    <!--技能-->
+    <div id="skill">
+    </div>
+</div>
+
+<!--footer-->
+<div id="footer"></div>
+<!--footer-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    /*(function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();*/
+</script>
+</body>
+</html>

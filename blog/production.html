@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title>个人作品集</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/production.css"/>
+    <!-- [if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function () {
+            $('#header').load('./include/header.html');
+            $('#inner-banner').load('./include/inner-banner.html');
+            $('#footer').load('./include/footer.html');
+        })
+
+    </script>
+</head>
+
+<body>
+<div id="header"></div>
+<div id="main">
+    <div class="do-banner">
+        <div class="do-area">
+            <div class="do-area-bg">
+                <div class="do-area-bg-content"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="text-center do-html-content">个人作品集</h2>
+                    </div>
+                    <div class="col-sm-12" style="padding-top: 8%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 30px">
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="media-img-box">
+                        <div class="media-img">
+                            <div class="media-img-content" data-toggle="modal" data-target="#myModal">
+                                <img src="proImg/zp14.png" alt="" class="proImg3" data-src="proImg/zp14.png" id="proImg3" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <p>January 2017</p>
+                        <h5>博客</h5>
+						<a target="_blank" href="http://5.webandapp.applinzi.com/">使用ionic开发博客移动版</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="media-img-box">
+                        <div class="media-img">
+                            <div class="media-img-content" data-toggle="modal" data-target="#myModal">
+                                <img src="proImg/zp17.png" alt="" class="proImg2" data-src="proImg/zp16.png" id="proImg16" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <p>February 2016</p>
+                        <h5>睿奇网移动版积分商城</h5>
+                        <a target="_blank" href="http://3.webandapp.applinzi.com/">移动版积分商城网页</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="media-img-box">
+                        <div class="media-img">
+                            <div class="media-img-content" data-toggle="modal" data-target="#myModal">
+                                <img src="proImg/zp15.png" alt="" class="proImg2" data-src="proImg/zp15.png" id="proImg15" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <p>February 2016</p>
+                        <h5>睿奇网PC版积分商城</h5>
+                        <a target="_blank" href="http://4.webandapp.applinzi.com/">原生PC版积分商城</a>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-xs-6 col-md-3">-->
+               <!--<div class="thumbnail">-->
+                   <!--<div class="media-img-box">-->
+                       <!--<div class="media-img">-->
+                           <!--<div class="media-img-content" data-toggle="modal" data-target="#myModal">-->
+                               <!--<img src="proImg/zp1.png" data-src="proImg/zp1.png" id="proImg1"  class="proImg1"/>-->
+                           <!--</div>-->
+                       <!--</div>-->
+
+                   <!--</div>-->
+                   <!--<div class="caption">-->
+                       <!--<p>June 2016</p>-->
+                       <!--<h5>威尔数据SCM一卡通</h5>-->
+                       <!--<p class="text-justify">一卡通考勤发卡模块的首页</p>-->
+                   <!--</div>-->
+               <!--</div>-->
+            <!--</div>-->
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="media-img-box">
+                        <div class="media-img">
+                            <div class="media-img-content"  data-toggle="modal" data-target="#myModal">
+                                <img src="proImg/zp2.png" data-src="proImg/zp2.png" alt="" id="proImg2" class="proImg2"/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <p>June 2016</p>
+                        <h5>威尔数据SCM一卡通</h5>
+                        <p class="text-justify">考勤发卡页面</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <img id="proImg" src="proImg/p1.jpg" alt="" class="img-responsive"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div id="footer"></div>
+<!--footer-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/pro.js"></script>
+<script>
+    /*(function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();*/
+</script>
+</body>
+</html>
